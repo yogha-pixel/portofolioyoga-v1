@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unknown-property */
 'use client';
-
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Canvas, extend, useFrame, type ThreeElement, type ThreeEvent } from '@react-three/fiber';
 import { useGLTF, useTexture, Environment, Lightformer } from '@react-three/drei';
@@ -26,7 +25,7 @@ extend({ MeshLineGeometry, MeshLineMaterial });
 declare module '@react-three/fiber' {
   interface ThreeElements {
     meshLineGeometry: ThreeElement<typeof MeshLineGeometry>;
-    meshLineMaterial: ThreeElement<typeof MeshLineMaterial>;
+    meshLineMaterial: ThreeElement<any>;
   }
 }
 
