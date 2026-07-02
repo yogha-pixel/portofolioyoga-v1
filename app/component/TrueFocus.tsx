@@ -92,7 +92,7 @@ const TrueFocus: React.FC<TrueFocusProps> = ({
             ref={el => {
               wordRefs.current[index] = el;
             }}
-            className="relative text-[1rem] font-black cursor-pointer"
+            className="relative text-[1rem] font-black cursor-pointer text-white"
             style={
               {
                 filter: manualMode
@@ -104,7 +104,8 @@ const TrueFocus: React.FC<TrueFocusProps> = ({
                     : `blur(${blurAmount}px)`,
                 transition: `filter ${animationDuration}s ease`,
                 outline: 'none',
-                userSelect: 'none'
+                userSelect: 'none',
+                color: '#ffffff'
               } as React.CSSProperties
             }
             onMouseEnter={() => handleMouseEnter(index)}

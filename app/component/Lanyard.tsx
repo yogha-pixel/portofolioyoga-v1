@@ -254,6 +254,7 @@ function Band({
         document.body.style.cursor = 'auto';
       };
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [hovered, dragged]);
 
   useFrame((state, delta) => {
